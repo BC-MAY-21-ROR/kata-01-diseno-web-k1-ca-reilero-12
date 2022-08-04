@@ -3,7 +3,7 @@
 footer{
     background-color: $color-dark-cyan;
     padding: $paddings;
-    padding-top: 100px;
+    padding-top: 130px;
     color:white;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,10 @@ footer{
         margin-bottom: 20px;
     }
     .info{
-        
+        @include font($font-body, 14px, 400, $color-white, 2.5rem);
+        p{
+            margin-bottom: 10px;
+        }
     }
 
 }

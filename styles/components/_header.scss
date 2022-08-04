@@ -1,6 +1,7 @@
 @use "./globals.scss" as *;
 
 header{
+    position: relative;
     background-color: $color-pale-cyan;
     background: url(../images/bg-hero-mobile.svg) center/cover no-repeat;
     width: 100%;
@@ -63,7 +64,7 @@ header{
             font-weight: 700;
             @include button(245px, 35px, $color-pale-cyan, $color-pink, 13px);
             margin-bottom: 30px;
-    
+            
     
         }
         

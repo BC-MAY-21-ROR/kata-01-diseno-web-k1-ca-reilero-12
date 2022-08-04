@@ -2,8 +2,9 @@
 @use 'globals' as *;
 
 .card{
+    position: relative;
     // border:  1px solid black;
-    @include card();
+    @include card(20px,30px,35px);
 
     &__image img{
         width: 90%;   
@@ -26,10 +27,15 @@
 }
 
 .pop-up{
+    background-color: white;
+    position: relative;
+    top: 100px;
+    z-index: 3;
     align-items: center;
-    @include card();
+    @include card(10px,40px,20px);
+    
     h2{
-        @include font($font-title, 15px, 600, $color-dark-cyan, 3.5rem);
+        @include font($font-title, 18px, 600, $color-dark-cyan, 3.5rem);
         margin-bottom: 20px;
     }
     button{

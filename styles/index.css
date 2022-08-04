@@ -10,6 +10,7 @@ html {
 }
 
 header {
+  position: relative;
   background-color: hsl(193deg, 100%, 96%);
   background: url(../images/bg-hero-mobile.svg) center/cover no-repeat;
   width: 100%;
@@ -38,6 +39,10 @@ header {
   border: none;
   border-radius: 30px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.navigation__button:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .hero {
@@ -80,8 +85,13 @@ header {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin-bottom: 30px;
 }
+.hero__info button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 
 .card {
+  position: relative;
   margin: 30px 20px;
   padding: 30px 35px;
   text-align: center;
@@ -116,9 +126,13 @@ header {
 }
 
 .pop-up {
+  background-color: white;
+  position: relative;
+  top: 100px;
+  z-index: 3;
   align-items: center;
-  margin: 30px 20px;
-  padding: 30px 35px;
+  margin: 30px 10px;
+  padding: 40px 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -127,7 +141,7 @@ header {
 }
 .pop-up h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   color: hsl(192deg, 100%, 9%);
   line-height: 3.5rem;
@@ -144,11 +158,15 @@ header {
   border-radius: 30px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.pop-up button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 
 footer {
   background-color: hsl(192deg, 100%, 9%);
   padding: 30px 20px;
-  padding-top: 100px;
+  padding-top: 130px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -156,4 +174,14 @@ footer {
 footer img {
   width: 140px;
   margin-bottom: 20px;
+}
+footer .info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 2.5rem;
+}
+footer .info p {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=index.css.map */
