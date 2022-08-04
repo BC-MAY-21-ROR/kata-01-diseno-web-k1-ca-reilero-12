@@ -9,6 +9,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  padding: 0px 20px;
+}
+
 header {
   background-color: hsl(193deg, 100%, 96%);
   background: url(../images/bg-hero-mobile.svg) center/cover no-repeat;
@@ -18,7 +22,8 @@ header {
 
 .navigation {
   display: flex;
-  padding: 30px 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   justify-content: space-between;
   align-items: center;
 }
@@ -40,4 +45,17 @@ header {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-/*# sourceMappingURL=index.css.map */
+.hero {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-direction: column;
+}
+.hero__info h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: hsl(192deg, 100%, 9%);
+  line-height: 3.5rem;
+}/*# sourceMappingURL=index.css.map */

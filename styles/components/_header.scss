@@ -9,7 +9,8 @@ header{
 
 .navigation{
     display: flex;
-    padding: 30px 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     justify-content: space-between;
     align-items: center;
 
@@ -28,5 +29,24 @@ header{
         @include button(120px, 35px, $color-dark-cyan, $color-white, 12px);
 
 
+    }
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: column;
+
+
+
+
+    &__info {
+        h1{ 
+            @include font($font-title, 25px, 600, $color-dark-cyan, 3.5rem);
+            
+        }
+        
     }
 }
