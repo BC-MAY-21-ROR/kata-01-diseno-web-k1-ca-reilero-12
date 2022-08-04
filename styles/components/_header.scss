@@ -9,8 +9,7 @@ header{
 
 .navigation{
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: $paddings;
     justify-content: space-between;
     align-items: center;
 
@@ -35,18 +34,39 @@ header{
 .hero{
     display: flex;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: $paddings;
     flex-direction: column;
+    text-align: center;
+    
 
+    &__image img {
 
-
+        padding-top: 20px;
+        width: 90%;
+    }
+    
 
     &__info {
         h1{ 
             @include font($font-title, 25px, 600, $color-dark-cyan, 3.5rem);
-            
+            margin-bottom: 25px;
+        }
+
+        p{
+            @include font($font-body, 16px, 400, $color-dark-cyan, 2.25rem);
+            margin-bottom: 25px;
+            padding:0 15px;
+
+        }
+
+        button {
+            font-weight: 700;
+            @include button(245px, 35px, $color-pale-cyan, $color-pink, 13px);
+            margin-bottom: 30px;
+    
+    
         }
         
+
     }
 }
