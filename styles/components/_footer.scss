@@ -1,0 +1,18 @@
+@use 'globals' as *;
+
+footer{
+    background-color: $color-dark-cyan;
+    padding: $paddings;
+    padding-top: 100px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 140px;
+        margin-bottom: 20px;
+    }
+    .info{
+        
+    }
+
+}
