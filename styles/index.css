@@ -9,10 +9,6 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  padding: 0px 20px;
-}
-
 header {
   background-color: hsl(193deg, 100%, 96%);
   background: url(../images/bg-hero-mobile.svg) center/cover no-repeat;
@@ -22,8 +18,7 @@ header {
 
 .navigation {
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 20px;
   justify-content: space-between;
   align-items: center;
 }
@@ -48,9 +43,13 @@ header {
 .hero {
   display: flex;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 20px;
   flex-direction: column;
+  text-align: center;
+}
+.hero__image img {
+  padding-top: 20px;
+  width: 90%;
 }
 .hero__info h1 {
   font-family: "Poppins", sans-serif;
@@ -58,4 +57,42 @@ header {
   font-weight: 600;
   color: hsl(192deg, 100%, 9%);
   line-height: 3.5rem;
+  margin-bottom: 25px;
+}
+.hero__info p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(192deg, 100%, 9%);
+  line-height: 2.25rem;
+  margin-bottom: 25px;
+  padding: 0 15px;
+}
+.hero__info button {
+  font-weight: 700;
+  width: 245px;
+  height: 35px;
+  color: hsl(193deg, 100%, 96%);
+  background-color: hsl(322deg, 100%, 66%);
+  font-size: 13px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 30px;
+}
+
+.card {
+  margin: 30px 20px;
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card__image img {
+  width: 80%;
+}
+.card__info {
+  margin-top: 40px;
 }/*# sourceMappingURL=index.css.map */
