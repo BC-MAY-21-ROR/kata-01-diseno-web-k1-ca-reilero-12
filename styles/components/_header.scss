@@ -1,17 +1,32 @@
-@use "./globals.scss";
+@use "./globals.scss" as *;
 
 header{
-    background-color: globals.$color-pale-cyan;
+    background-color: $color-pale-cyan;
     background: url(../images/bg-hero-mobile.svg) center/cover no-repeat;
     width: 100%;
+    height: 100vh;
 }
 
 .navigation{
-    margin: 30px 15px;
-    width: 100%;
-    height: 10%;
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__image {
+        margin: 0;
+    }
+
     &__image img{
-        height: 23px;
-        width: 40%;
+        width: 50%;
+    }
+
+    &__button {
+        font-weight: 700;
+
+        @include button(120px, 35px, $color-dark-cyan, $color-white, 12px);
+
+
     }
 }

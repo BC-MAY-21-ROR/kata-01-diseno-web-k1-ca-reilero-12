@@ -7,6 +7,18 @@ $color-pink: hsl(322, 100%, 66%);
 $color-pale-cyan:  hsl(193, 100%, 96%);
 $color-dark-cyan: hsl(192, 100%, 9%);
 $color-grayish-blue: hsl(208, 11%, 55%);
+$color-white: #ffffff;
+
+@mixin button($width, $height, $color, $bg, $font-size ){
+    width: $width;
+    height: $height;
+    color: $color;
+    background-color: $bg;
+    font-size: $font-size;
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 
 * {
     margin: 0;
