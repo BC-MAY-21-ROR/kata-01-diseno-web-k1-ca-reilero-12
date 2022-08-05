@@ -26,14 +26,20 @@ $paddings-desktop: 40px 80px;
         cursor: pointer;
     }
 }
-@mixin card($margin-left-right,$padding-top-bottom,$padding-left-right){
-    margin: 30px $margin-left-right;
+@mixin card($margin-left-right,$padding-top-bottom,$padding-left-right, $flex-direction:column, $margin-top-bottom:30px){
+    margin: $margin-top-bottom $margin-left-right;
     padding: $padding-top-bottom $padding-left-right;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: $flex-direction;
     border-radius: 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    @include desktop{
+        margin: $margin-top-bottom $margin-left-right;
+        align-items: center;
+        padding-right: 0px;
+    }
 }
 
 @mixin font($font-family, $font-size, $font-weight, $font-color, $font-height){

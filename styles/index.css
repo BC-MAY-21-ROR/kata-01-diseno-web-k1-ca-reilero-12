@@ -18,6 +18,7 @@ header {
 @media (min-width: 1200px) {
   header {
     background: url(../images/bg-hero-desktop.svg) center/cover no-repeat;
+    margin-bottom: 50px;
   }
 }
 
@@ -166,12 +167,55 @@ header {
   border-radius: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+@media (min-width: 1200px) {
+  .card {
+    margin: 30px 20px;
+    align-items: center;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    margin: 50px 80px;
+    padding: 30px 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .card {
+    margin: 50px 80px;
+    align-items: center;
+    padding-right: 0px;
+  }
+}
 .card__image img {
   width: 90%;
   margin: 15px 0;
 }
+@media (min-width: 1200px) {
+  .card__image img {
+    width: 70%;
+    padding: 0;
+    margin: 20px 0px;
+    position: relative;
+    right: 0;
+    left: 55px;
+  }
+}
 .card__info {
   margin-top: 40px;
+}
+@media (min-width: 1200px) {
+  .card__info {
+    text-align: left;
+    padding: 0 70px;
+    width: 95%;
+    margin: 0;
+  }
 }
 .card__info h2 {
   font-family: "Poppins", sans-serif;
@@ -181,6 +225,15 @@ header {
   line-height: 3.5rem;
   margin-bottom: 14px;
 }
+@media (min-width: 1200px) {
+  .card__info h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: hsl(192deg, 100%, 9%);
+    line-height: 3.5rem;
+  }
+}
 .card__info p {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
@@ -189,6 +242,34 @@ header {
   line-height: 2.25rem;
   margin-bottom: 0;
   opacity: 0.6;
+}
+@media (min-width: 1200px) {
+  .card__info p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: hsl(192deg, 100%, 9%);
+    line-height: 2.5rem;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin-top: 120px;
+  }
+}
+
+.reverse {
+  flex-direction: row;
+  padding-right: 6px;
+}
+@media (min-width: 1200px) {
+  .reverse .card__image {
+    position: relative;
+    left: -80px;
+    right: 0px;
+  }
 }
 
 .pop-up {
@@ -205,6 +286,13 @@ header {
   border-radius: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+@media (min-width: 1200px) {
+  .pop-up {
+    margin: 30px 10px;
+    align-items: center;
+    padding-right: 0px;
+  }
+}
 .pop-up h2 {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -212,6 +300,12 @@ header {
   color: hsl(192deg, 100%, 9%);
   line-height: 3.5rem;
   margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .pop-up h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
 }
 .pop-up button {
   font-weight: 700;
@@ -227,6 +321,21 @@ header {
 .pop-up button:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .pop-up button {
+    width: 45%;
+    height: 70px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .pop-up {
+    width: 58%;
+    margin: 0 auto;
+    height: 265px;
+    padding-top: 60px;
+  }
 }
 
 footer {
@@ -320,6 +429,4 @@ footer .info__social-media ion-icon:hover {
 }
 footer .copyright {
   text-align: center;
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
