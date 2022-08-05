@@ -10,6 +10,7 @@ $color-grayish-blue: hsl(208, 11%, 55%);
 $color-white: #ffffff;
 
 $paddings: 30px 20px;
+$paddings-desktop: 40px 80px;
 
 @mixin button($width, $height, $color, $bg, $font-size ){
     width: $width;
@@ -42,6 +43,12 @@ $paddings: 30px 20px;
     color: $font-color;
     line-height: $font-height;
 
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
 }
 
 * {
