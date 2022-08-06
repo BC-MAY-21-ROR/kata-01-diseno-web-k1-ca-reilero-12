@@ -65,10 +65,11 @@
 }
 
 .reverse{
-    flex-direction: row;
-    padding-right: 6px;
+    
 
     @include desktop{
+        flex-direction: row;
+        padding-right: 6px;
         .card__image{
             position:relative;
             left:-80px;
