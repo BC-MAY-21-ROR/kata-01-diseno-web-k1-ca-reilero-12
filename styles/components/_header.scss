@@ -30,6 +30,10 @@ header{
 
     &__image img{
         width: 50%;
+
+        @include desktop{
+            width: 75%;
+        }
     }
 
     &__button {
@@ -37,6 +41,11 @@ header{
 
         @include button(120px, 35px, $color-dark-cyan, $color-white, 12px);
 
+        @include desktop{
+
+            width: 165px;
+            height: 40px;
+        }
 
     }
 }
