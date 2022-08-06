@@ -14,7 +14,7 @@ footer{
   
     }
     @include desktop{
-        padding: 130px 80px 130px; 
+        padding: 170px 80px 130px; 
         
     }
     .info{
@@ -28,6 +28,12 @@ footer{
 
         p{
             margin-bottom: 10px;
+
+            @include desktop{
+                margin-bottom: 20px;
+            };
+
+
 
             span {
                 width: 25px;
@@ -43,7 +49,8 @@ footer{
 
             @include desktop{
                 width: 40%;
-                padding-right: 20px;
+                padding-right: 120px;
+
             }
 
             figure {
@@ -149,6 +156,8 @@ footer{
     text-align: center;
     @include desktop{
         text-align: right;
+        margin-right: 40px;
+
     }
 }
 
