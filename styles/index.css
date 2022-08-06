@@ -40,6 +40,11 @@ header {
 .navigation__image img {
   width: 50%;
 }
+@media (min-width: 1200px) {
+  .navigation__image img {
+    width: 75%;
+  }
+}
 .navigation__button {
   font-weight: 700;
   width: 120px;
@@ -54,6 +59,12 @@ header {
 .navigation__button:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .navigation__button {
+    width: 165px;
+    height: 40px;
+  }
 }
 
 .hero {
@@ -260,11 +271,11 @@ header {
   }
 }
 
-.reverse {
-  flex-direction: row;
-  padding-right: 6px;
-}
 @media (min-width: 1200px) {
+  .reverse {
+    flex-direction: row;
+    padding-right: 6px;
+  }
   .reverse .card__image {
     position: relative;
     left: -80px;
@@ -353,7 +364,7 @@ footer picture img {
 }
 @media (min-width: 1200px) {
   footer {
-    padding: 130px 80px 130px;
+    padding: 170px 80px 130px;
   }
 }
 footer .info {
@@ -372,6 +383,11 @@ footer .info {
 footer .info p {
   margin-bottom: 10px;
 }
+@media (min-width: 1200px) {
+  footer .info p {
+    margin-bottom: 20px;
+  }
+}
 footer .info p span {
   width: 25px;
   height: 25px;
@@ -380,7 +396,7 @@ footer .info p span {
 @media (min-width: 1200px) {
   footer .info__contact {
     width: 40%;
-    padding-right: 20px;
+    padding-right: 120px;
   }
 }
 footer .info__contact figure {
@@ -473,5 +489,6 @@ footer .info__social-media ion-icon:hover {
 @media (min-width: 1200px) {
   .copyright {
     text-align: right;
+    margin-right: 40px;
   }
 }/*# sourceMappingURL=index.css.map */
