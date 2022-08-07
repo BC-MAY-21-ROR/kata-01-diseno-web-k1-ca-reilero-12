@@ -47,6 +47,9 @@ Feel free to use any workflow that you feel comfortable with. Below is a suggest
 
 ## Página web
 Agrega aquí un enlace a tu página web publicada.
+
+https://bc-may-21-ror.github.io/kata-01-diseno-web-k1-ca-reilero-12/
+
   
 ## Resources
 
